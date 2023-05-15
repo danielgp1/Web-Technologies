@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome To IssueTracker</title>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="icon" type="image/x-icon" href="logo.ico">
+	<link rel="stylesheet" type="text/css" href="welcome.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+	<div class="main">
+		<input type="checkbox" id="chk" aria-hidden="true">
+			<div class="register">
+				<div>
+					<label id="lbl" for="chk" aria-hidden="true">Register</label>
+					<input type="text" id="fname" name="txt" placeholder="First Name" required>
+					<input type="text" id="lname" name="txt" placeholder="Last Name" required>
+					<input type="text" name="txt" id="reg_username" placeholder="Username" required>
+					<input type="email" name="email" id="reg_email" placeholder="Email" required>
+					<div class="password-container">
+						<input type="password" name="pwd" id="reg_password" placeholder="Password" required>
+						<i class="fa-solid fa-eye" id="eye1"></i>
+					</div>
+					<div class="password-container">
+						<input type="password" name="cpwd" id="confirm_password" placeholder="Confirm Password" required>
+						<i class="fa-solid fa-eye" id="eye2"></i>
+					</div>
+					<button id="regBtn">Register</button>
+				</div>
+			</div>
+
+			<div class="login">
+				<label id="lbl" for="chk" aria-hidden="true">Login</label>
+				<div id="login-box">
+					<input type="email" name="email" id="login_email" placeholder="Email" required>
+					<div class="password-container">
+						<input type="password" name="pwd" id="login_password" placeholder="Password" required>
+						<i class="fa-solid fa-eye" id="eye3"></i>
+					</div>
+					<button id="logBtn">Login</button>
+					<img src="logo.png" alt="Logo"> 
+				</div>	
+			</div> 
+	</div>
+	<script type="module" src="welcome.js"></script>
+</body>
+</html>
