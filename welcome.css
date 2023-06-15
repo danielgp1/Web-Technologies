@@ -15,7 +15,7 @@ body{
 	/* background: linear-gradient(to bottom, #313131, #7d7c7c, #313131); */
 }
 label{
-	color: #fff;
+	color: #fff; 
 	font-size: 2.3em;
 	justify-content: center;
 	display: flex;

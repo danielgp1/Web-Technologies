@@ -107,6 +107,7 @@ regBtn.addEventListener('click', (e) => {
         case 'auth/email-already-in-use': alert("Email already in use!"); break;
         case 'auth/missing-password': alert("Enter a password!"); break;
         case 'auth/weak-password': alert("Password should be at least 6 characters!"); break;
+        case 'auth/network-request-failed': alert("Check your internet connection!"); break;
         default: alert(errorMessage);
       }
     });
@@ -132,6 +133,7 @@ logBtn.addEventListener('click', (e) => {
         case 'auth/missing-password': alert("Invalid password"); break;
         case 'auth/wrong-password': alert("Wrong password!"); break;
         case 'auth/user-not-found': alert("Account not found! Please register!"); break;
+        case 'auth/network-request-failed': alert("Check your internet connection!"); break;
         default: alert(errorMessage);
       }
     });
